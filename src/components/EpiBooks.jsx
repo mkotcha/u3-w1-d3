@@ -18,7 +18,8 @@ class EpiBooks extends Component {
 
   filter = event => {
     event.preventDefault();
-    this.setState({ filter: event.target.filter.value });
+    if (event.type === "change") this.setState({ filter: event.target.value });
+    else this.setState({ filter: event.target.filter.value });
   };
 
   render() {

@@ -19,7 +19,7 @@ const MyNav = props => {
               className="me-2"
               aria-label="Search"
               id="filter"
-              onChange={event => props.classIstance.setState({ filter: event.target.value })}
+              onChange={event => props.classIstance.filter(event)}
             />
             <Button variant="outline-success" type="submit">
               Search
