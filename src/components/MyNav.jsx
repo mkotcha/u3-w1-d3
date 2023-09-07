@@ -19,7 +19,7 @@ const MyNav = props => {
               className="me-2"
               aria-label="Search"
               placeholder="Scrivi un titolo..."
-              // value={props.classIstance.state.filter}
+              value={props.classIstance.state.filter}
               onChange={props.classIstance.filter}
             />
             <Button variant="outline-success" type="submit">
